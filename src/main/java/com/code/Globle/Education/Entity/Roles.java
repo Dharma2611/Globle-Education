@@ -2,9 +2,17 @@ package com.code.Globle.Education.Entity;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
+@Getter
 @Entity
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Roles {
 	 @Id
 	  @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,20 +20,6 @@ public class Roles {
 	 @Enumerated(EnumType.STRING)
 	 @Column(length = 20)
 	 private ERole name;
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public ERole getName() {
-		return name;
-	}
-	public void setName(ERole name) {
-		this.name = name;
-	}
-	  public Roles() {
 
-	  }
 
 }

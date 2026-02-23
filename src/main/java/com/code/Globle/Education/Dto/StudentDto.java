@@ -40,7 +40,7 @@ public class StudentDto {
 		StudentDto dto = new StudentDto();
 		dto.setCourseIntrested(student.getCourseIntrested());
 		dto.setEmailId(student.getEmailId());
-		dto.setIntakeYear(student.getInTakeYear());
+		dto.setIntakeYear(student.getIntakeYear());
 		dto.setIntrestedCountry(student.getIntrestedCountry());
 		dto.setStudentId(student.getStudentId());
 		dto.setStudentName(student.getStudentName());
